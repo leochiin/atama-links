@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>脑瓜atama · Links</title>
+<meta name="description" content="脑瓜atama 官网、网店与社交账号">
+<style>
+:root {
+  /* layout: single-theme yellow world, one narrow column of full-bleed link rows separated by black rules */
+  --yellow: #FFFF50; /* PANTONE 101C */
+  --ink: #111111;
+  --ink-soft: #3a3600;
+  --paper: #FFFFC8;
+  --rule: #111111;
+  --font-display: "Archivo Black", "Arial Black", sans-serif;
+  --font-body: "PingFang SC", "Hiragino Sans", "Microsoft YaHei", "Noto Sans SC", "Noto Sans JP", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--yellow);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 48px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+header { display: flex; flex-direction: column; gap: 10px; }
+.mark {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--yellow);
+  display: grid; place-items: center;
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1;
+}
+h1 {
+  margin: 8px 0 0;
+  font-family: var(--font-display);
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.names { font-size: 14px; font-weight: 500; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.bio { margin: 0; font-size: 15px; max-width: 38ch; }
+
+.group { display: flex; flex-direction: column; }
+.group h2 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.links { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--rule); }
+.links li { border-bottom: 2px solid var(--rule); }
+.links a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 4px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: background .15s, padding .15s;
+}
+.links a:hover, .links a:focus-visible {
+  background: var(--ink);
+  color: var(--yellow);
+  padding-left: 14px; padding-right: 14px;
+  outline: none;
+}
+.links .t { font-size: 18px; font-weight: 700; line-height: 1.3; min-width: 0; }
+.links .s { display: block; font-size: 13px; font-weight: 400; opacity: .75; margin-top: 2px; overflow-wrap: anywhere; }
+.links .arr { font-family: var(--font-display); font-size: 20px; display: grid; place-items: center; transition: transform .15s; }
+.links a:hover .arr, .links a:focus-visible .arr { transform: translate(2px,-2px); }
+.todo .t::after {
+  content: "待补链接";
+  margin-left: 8px;
+  font-size: 11px; font-weight: 700;
+  padding: 2px 6px;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  vertical-align: 2px;
+}
+
+.contact {
+  border-top: 2px solid var(--rule);
+  border-bottom: 2px solid var(--rule);
+  padding: 18px 4px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.contact p { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; }
+.contact .addr { font-size: 22px; font-weight: 700; overflow-wrap: anywhere; }
+.contact button {
+  align-self: flex-start;
+  font: inherit; font-size: 13px; font-weight: 700;
+  background: transparent; color: var(--ink);
+  border: 2px solid var(--ink); padding: 6px 14px; cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.contact button:hover, .contact button:focus-visible { background: var(--ink); color: var(--yellow); outline: none; }
+
+footer { font-size: 12px; color: var(--ink-soft); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+@media (prefers-reduced-motion: reduce) { .links a { transition: none; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <section class="group" aria-labelledby="g-main">
+    <h2 id="g-main">Shop &amp; Work</h2>
+    <ul class="links">
+      <li><a href="https://atama.works" target="_blank" rel="noopener">
+        <span class="t">官网 Website<span class="s">atama.works</span></span><span class="arr" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M8 22L22 8M11 8h11v11" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg></span></a></li>
+      <li><a href="https://atama.buyshop.jp" target="_blank" rel="noopener">
+        <span class="t">atama shop<span class="s">atama.buyshop.jp · BASE</span></span><span class="arr" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M8 22L22 8M11 8h11v11" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg></span></a></li>
+    </ul>
+  </section>
+
+  <section class="group" aria-labelledby="g-social">
+    <h2 id="g-social">Follow</h2>
+    <ul class="links">
+      <li><a href="https://www.instagram.com/atama.now/" target="_blank" rel="noopener"><span class="t">Instagram<span class="s">@atama.now</span></span><span class="arr" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M8 22L22 8M11 8h11v11" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg></span></a></li>
+      <li><a href="https://xhslink.cn/o/1S0W4GPSz5S" target="_blank" rel="noopener"><span class="t">小红书<span class="s">脑瓜atama · 1.3万粉丝</span></span><span class="arr" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M8 22L22 8M11 8h11v11" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg></span></a></li>
+      <li><a href="https://space.bilibili.com/2133456201" target="_blank" rel="noopener"><span class="t">哔哩哔哩<span class="s">bilibili</span></span><span class="arr" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M8 22L22 8M11 8h11v11" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg></span></a></li>
+      <li><a href="#" id="wx"><span class="t">微信公众号<span class="s" id="wx-s">脑瓜atama · 点击复制名称，在微信中搜索</span></span><span class="arr" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M11 11h12v12H11z M7 19V7h12" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="miter"/></svg></span></a></li>
+    </ul>
+  </section>
+
+  <section class="contact" aria-labelledby="g-contact">
+    <p id="g-contact">合作 · お問い合わせ · Contact</p>
+    <a class="addr" href="mailto:info@atama.works" style="color:inherit;text-decoration:none">info@atama.works</a>
+    <button type="button" id="copy">复制邮箱</button>
+  </section>
+
+  <footer><span>© atama.works</span><span>Tokyo / Shanghai</span></footer>
+</main>
+<script>
+document.getElementById('wx').addEventListener('click', async (e) => {
+  e.preventDefault();
+  const s = document.getElementById('wx-s');
+  const old = s.textContent;
+  try { await navigator.clipboard.writeText('脑瓜atama'); s.textContent = '已复制，打开微信搜索即可'; }
+  catch (err) { s.textContent = '请在微信中搜索：脑瓜atama'; }
+  setTimeout(() => { s.textContent = old; }, 2200);
+});
+document.getElementById('copy').addEventListener('click', async (e) => {
+  const b = e.currentTarget;
+  try { await navigator.clipboard.writeText('info@atama.works'); b.textContent = '已复制'; }
+  catch (err) { b.textContent = '请手动复制'; }
+  setTimeout(() => { b.textContent = '复制邮箱'; }, 1800);
+});
+</script>
+</body>
+</html>
